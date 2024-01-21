@@ -1,1 +1,1 @@
-This repo demonstrates the use of redux-toolkit with react and typescript
+This repo demonstrates the concepts of react with state managment, custom hooks and typescript
