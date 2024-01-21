@@ -22,7 +22,9 @@ Class components have lifecycle methods, that are executed automatically in well
 
 life cycle has 4 phases
 # Mounting  -> Constructor, static getDerivedStateFromProps, render, ComponentDidMount, 
+
 # Updating -> getDerivedStateFromProps, shouldComponentUpdate,render, getSnapShotBeforeUpdate, ComponentDidUpdate, 
+
 # Unmounting -> componentWillUnmount
 # Error handling -> componentDidCatch
 
@@ -32,14 +34,14 @@ componentDidMount, componentDidUpdate, componentWillUnmount.
 Mutations, times, subscriptions, logging are not allowed in the main body of the function.
 
 event parameter to the component.
-<button onClick={handleClick}></button>
+```<button onClick={handleClick}></button>
 function handleClick(e){
     // e is the synthetic event object wrapped around the native browser event object and is passed to every function automatically.
     console.log(e.target.value)
     
 }
-
-e.preventDefault() 
+```
+`e.preventDefault()`
 // form on submit by default sends data to the server. In order to prevent in JavaScript we have return false, but in react only way is to preventDefault.
 
 
@@ -104,7 +106,7 @@ onClick, onChange etc.
 Refere : CartRedux.js
 for class based component with event and disatch refer: CartReduxComponents/PurchaseCl.js
 
-** Action creator pattern **
+**Action creator pattern**
 
 Combine Reducers are used to logically group and 
 modularize the reducers. refer : CartStoreRedux/store.js.
